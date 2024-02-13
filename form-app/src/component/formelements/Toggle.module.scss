@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.container{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+
+}
+.switch{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+
+    input{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .slider_round {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #BAB8BB;
+        -webkit-transition: .4s;
+        transition: .4s;
+        border-radius: 34px;
+      }
+
+      .slider_round:before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        left: 2px;
+        bottom: 2px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+        border-radius: 50%;
+      }
+      .slider_round:hover {
+        background-color: #9D9D9D;
+      }
+      .slider_round:checked:hover {
+        background-color: #0087CE;
+      }
+      .slider_round:checked {
+        background: rgb(0,135,206);
+        background: linear-gradient(90deg, rgba(0,135,206,1) 0%, rgba(0,161,244,1) 100%);
+      }
+
+      input:checked + .slider_round {
+        background-color: #2196F3;
+      }
+      input:focus + .slider_round {
+        box-shadow: 0px 0px 0px  3px rgba(0,168,255,0.3);
+        outline: none ;
+      }
+      
+      input:checked + .slider_round:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+      }
+      
+}

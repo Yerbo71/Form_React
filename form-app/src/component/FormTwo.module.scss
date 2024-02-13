@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: start;
+    align-items: center;
+    width: 525px;
+
+
+    h1 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        color: #00A1F4;
+        width: 100%;
+      }
+    p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        color: #857F87;
+      }
+      a{
+        font-family: 'Roboto', sans-serif;
+        color: #00A1F4;
+        text-decoration: underline;
+        margin-left: 3px;
+        cursor: pointer;
+      }
+    
+      .headerBlock {
+        width: 100%;
+        border-bottom: 1px solid #E6E6E6;
+        display: flex;
+        text-align: center;
+      }
+      .inputBlocks {
+        width: 100%;  
+      }
+
+      .footerCustom {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-top: 1px solid #E6E6E6;
+        margin-top: 15px;
+        padding: 15px 0px 10px 0px;
+      }
+
+      form {
+        width: 100%; 
+      }
+}

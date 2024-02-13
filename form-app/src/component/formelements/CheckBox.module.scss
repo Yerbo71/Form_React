@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.checkBoxCustom{
+    margin-left: 25px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #B6B6B6;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.checkBoxCustom:hover{
+    border: 1px solid #857F87;
+}
+.checkBoxCustom:hover:checked{
+    color: #0087CE;
+}
+
+.checkBoxCustom:focus{
+    box-shadow: 0px 0px 0px  3px rgba(0,168,255,0.3);
+    outline: none ;
+}
+
+
+.labelCustom{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-left: 10px;
+}
